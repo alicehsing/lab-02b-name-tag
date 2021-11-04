@@ -5,21 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Ny Name Tag</title>
+    <title>My Name Tag</title>
 </head>
 
 <body>
+    <header>The Interactive Name Tag</header>
+    <hr>
+    <section id="update-name">
+        <input id="my-input" type="text" placeholder="Type Your Name">
+        ->
+        <button id="my-button">Change</button>
+    </section>
+    <br>
 
-    <header>I'm pretty happy with my name tag...<br>Hope you like it too! :)</header>
+    <section>
+        <label for="pronoun">Choose A Pronoun</label>
+            <select name="pronouns" id="pronouns">
+                <option id="he-pronoun" value="he/his">He/His</option>
+                <option value="she/her">She/Her</option>
+                <option value="they/them">They/Them</option>
+            </select>
+    </section>
+
+
+
+    <section id="update-background">
+        Select Your Own Background:
+        <button id="orange-button">Orange</button>
+        <button id="yellow-button">Yellow</button>
+        <button id="green-button">Green</button>
+        <button id="blue-button">Blue</button>
+        <button id="purple-button">Purple</button>
+    </section>
     <br>
     <div class="container">
-        <div class="box">
+        <div id="change-background" class="box">
             <div class="greeting-display">HELLO</div>
             <div class="my-name-is">my name is</div>
-            <div class="the-name">Alice Hsing</div>
+            <div id="change-name" class="the-name">Alice Hsing</div>
             <div class="footer"></div>
         </div>
     </div>
+    <script type="module" src="app.js"></script>
 </body>
 
 </html>
